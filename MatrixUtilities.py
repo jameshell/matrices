@@ -5,17 +5,18 @@ def Addition(arr1, arr2):
         result = np.add(arr1, arr2)
         return result
     else:
-        print("Error: Arrays are not equal in size.")
+        print("Addition Error: Arrays are not equal in size.")
 
 def Substraction(arr1, arr2):
     if(CheckDimensions(arr1, arr2)):
         result = np.subtract(arr1, arr2)
         return result
     else:
-        print("Error: Arrays are not equal in size.")
+        print("Substraction Error: Arrays are not equal in size.")
 
 def Multiplication(arr1, arr2):
-    print("Perfoming Operations")
+    result = np.multiply(arr1, arr2)
+    return result
 
 def Inverse(arr1, arr2):
     print("Perfoming Operations")
