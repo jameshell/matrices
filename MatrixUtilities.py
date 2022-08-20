@@ -13,8 +13,10 @@ def Addition(arr1, arr2):
             return result
         else:
             print(f'{OPERATION} Error: Arrays are not equal in size.')
+            return None
     except:
         print(f'{OPERATION} Error -> {sys.exc_info()[0]}: {sys.exc_info()[1]}')
+        return None
 
 
 def Substraction(arr1, arr2):
@@ -25,8 +27,10 @@ def Substraction(arr1, arr2):
             return result
         else:
             print(f"{OPERATION} Error: Arrays are not equal in size.")
+            return None
     except:
         print(f'Susbtraction Error -> {sys.exc_info()[0]}: {sys.exc_info()[1]}')
+        return None
 
 def Multiplication(arr1, arr2):
     OPERATION = 'Multiplication'
@@ -35,6 +39,7 @@ def Multiplication(arr1, arr2):
         return result
     except:
         print(f'{OPERATION} Error -> {sys.exc_info()[0]}: {sys.exc_info()[1]}')
+        return None
 
 def Inverse(arr1, arr2):
     print("Perfoming Operations")
