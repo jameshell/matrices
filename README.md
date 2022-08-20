@@ -2,7 +2,9 @@
 
 ### Project Status ###
 
-- **Continuous Integration** -> [![jameshell](https://circleci.com/gh/jameshell/matrices.svg?style=svg)](https://app.circleci.com/pipelines/github/jameshell)
+- **Continuous Integration**: [![jameshell](https://circleci.com/gh/jameshell/matrices.svg?style=svg)](https://app.circleci.com/pipelines/github/jameshell)
+
+- **Continuous Delivery**: [![jameshell](https://circleci.com/gh/jameshell/matrices.svg?style=svg)](https://app.circleci.com/pipelines/github/jameshell)
 
 ### Intructions to Run (Windows): ###
 
