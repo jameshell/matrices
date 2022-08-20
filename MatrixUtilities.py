@@ -1,8 +1,10 @@
 import numpy as np
 import sys
 
+# Constants
 OPERATION=''
 
+#Methods
 def Addition(arr1, arr2):
     OPERATION = 'Addition'
     try:
