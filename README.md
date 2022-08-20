@@ -1,5 +1,9 @@
 ## Artificial Intelligence Masters' Degree - First Assignment ##
 
+### Project Status ###
+
+- **Continuous Integration** -> [![jameshell](https://circleci.com/gh/jameshell/matrices.svg?style=svg)](https://app.circleci.com/pipelines/github/jameshell)
+
 ### Intructions to Run (Windows): ###
 
 1. Install the python package manager **PIP**:
