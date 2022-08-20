@@ -17,4 +17,9 @@
 3. Search for the **Matrices.py** file located in the root folder of the project
 4. Execute the **Matrices.py** file by using the command ```py Matrices.py```
 
+### Instructions to Test
+
+1. Install the **Pytest** library by running the following code: ```pip install pytest```
+2. Execute the following command in the root folder: ```pytest```
+
 **Author:** Jaime Alonso 
