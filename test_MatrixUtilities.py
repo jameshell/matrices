@@ -10,7 +10,4 @@ def test_Addition():
 
 def test_Substraction():
     solution = np.array([[-6,-2], [-9,3]])
-    print(f'OPERATION = {utils.Substraction(arrDummy1, arrDummy2)}')
-    print(f'SOLUTION = {solution}')
-
     assert np.array_equal(utils.Substraction(arrDummy1, arrDummy2), solution)
