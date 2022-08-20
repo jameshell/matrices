@@ -2,9 +2,9 @@ import numpy as np
 import MatrixUtilities as utils
 
 def main():
-    # Creating  arrays using numpy
-    arrShape2A = np.array([[-1], [5, -4]])
-    arrShape2B = np.array([[2, 5], [4, 3]])
+    # Creating  arrays using numpy (INPUT ARRAYS)
+    arrShape2A = np.array([[-4,3], [-4,6]])
+    arrShape2B = np.array([[2,5,3], [4,3,9]])
 
     # Show Matrices
     utils.DescribeMatrices(arrShape2A, arrShape2B)
@@ -13,14 +13,6 @@ def main():
     print(f'ADDITION = \n{utils.Addition(arrShape2A, arrShape2B)}')
     print(f'SUBSTRACTION = \n{utils.Substraction(arrShape2A, arrShape2B)}')
     print(f'MULTIPLICATION = \n{utils.Multiplication(arrShape2A, arrShape2B)}')
-
-
-
-    # Shape 3 matrices
-    arrShape3A = np.array([[2, -7, 5], [-6, 2, 0]])
-    arrShape3B = np.array([[5, 8, -5], [3, 6, 9]])
-
-    # Printing arrays
 
 if __name__ == "__main__":
     main()

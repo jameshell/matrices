@@ -1,22 +1,38 @@
 import numpy as np
+import sys
+
+OPERATION=''
 
 def Addition(arr1, arr2):
-    if(CheckDimensions(arr1, arr2)):
-        result = np.add(arr1, arr2)
-        return result
-    else:
-        print("Addition Error: Arrays are not equal in size.")
+    OPERATION = 'Addition'
+    try:
+        if(CheckDimensions(arr1, arr2)):
+            result = np.add(arr1, arr2)
+            return result
+        else:
+            print(f'{OPERATION} Error: Arrays are not equal in size.')
+    except:
+        print(f'{OPERATION} Error -> {sys.exc_info()[0]}: {sys.exc_info()[1]}')
+
 
 def Substraction(arr1, arr2):
-    if(CheckDimensions(arr1, arr2)):
-        result = np.subtract(arr1, arr2)
-        return result
-    else:
-        print("Substraction Error: Arrays are not equal in size.")
+    OPERATION = 'Substraction'
+    try:
+        if(CheckDimensions(arr1, arr2)):
+            result = np.subtract(arr1, arr2)
+            return result
+        else:
+            print(f"{OPERATION} Error: Arrays are not equal in size.")
+    except:
+        print(f'Susbtraction Error -> {sys.exc_info()[0]}: {sys.exc_info()[1]}')
 
 def Multiplication(arr1, arr2):
-    result = np.multiply(arr1, arr2)
-    return result
+    OPERATION = 'Multiplication'
+    try:
+        result = np.dot(arr1, arr2)
+        return result
+    except:
+        print(f'{OPERATION} Error -> {sys.exc_info()[0]}: {sys.exc_info()[1]}')
 
 def Inverse(arr1, arr2):
     print("Perfoming Operations")
@@ -29,9 +45,9 @@ def CheckDimensions(arr1, arr2):
 
 def DescribeMatrices(arr1, arr2):
     print(f'')
-    print(f'FIRST ARRAY = \n{arr1}')
-    print(f'FIRST ARRAY DIMENSIONS = {arr1.shape}\n')
+    print(f'FIRST MATRIX = \n{arr1}')
+    print(f'FIRST MATRIX DIMENSIONS = {arr1.shape}\n')
     print("-----------------------------------------")
-    print(f'SECOND ARRAY = \n{arr2}')
-    print(f'SECOND ARRAY DIMENSIONS = {arr2.shape}')
+    print(f'SECOND MATRIX = \n{arr2}')
+    print(f'SECOND MATRIX DIMENSIONS = {arr2.shape}')
     print("-----------------------------------------")
